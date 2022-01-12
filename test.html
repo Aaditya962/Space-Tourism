@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Merriweather&family=Montserrat:ital,wght@1,200&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+   <div class="navbar">
+   <div class="logo">
+    <img src="assets/shared/logo.svg">
+   </div>
+   <div class="tabs">
+     <div class="tab"><strong>00</strong> HOME</div>
+     <div class="tab"><strong>01</strong> DESTINATION</div>
+     <div class="tab"><strong>02</strong> CREW</div>
+     <div class="tab"><strong>03</strong> TECHNOLOGY</div>
+    </div>
+ </div>
+ <div class="line"></div> 
+  
+<p id="demo"></p>
+<script>
+   const orig = ["t","e","s","t"];
+   var currsite=window.location.href;
+   var len=currsite.length;
+   const htm = [];
+   var posS;
+   var posE;
+   var flag;
+   var j = 0;
+    for(var i=len;i>=0;i--){
+      if(currsite[i]==='/'){
+       posS=i+1;
+       break;
+      }
+    }
+    for(var i=len;i>=0;i--){
+      if(currsite[i]==='.'){
+       posE=i;
+       break;
+      }
+    }
+    for(var k=posS;k<posE;k++){
+      htm[j] = currsite[k];
+      j++;
+    }
+  if(JSON.stringify(orig)==JSON.stringify(htm)){
+  document.getElementById("demo").innerHTML = "Otha";
+  } 
+</script>
+</body>
+</html>

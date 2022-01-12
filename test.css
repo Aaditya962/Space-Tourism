@@ -1,0 +1,55 @@
+body{
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-size: cover;
+}
+.navbar{
+     display: flex;
+     justify-content: space-around;
+}
+.line{
+    position: relative;
+    left: 215px;
+    width : 620px;
+    border-top: 1px solid grey;
+    opacity: 0.25;
+    mix-blend-mode: normal;
+}
+.logo{   
+    margin-right: 100px;
+    position: relative;
+    top: 80px;
+    left: 80px;     
+    flex: 1 1 200px;
+    flex-wrap: wrap;
+}
+.tabs{
+    position: relative;
+    top: 50px;
+    height: 96px;
+    width: 830px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(81.5485px);
+    color: #ffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    flex: 2 1 100px;
+}
+p{
+    color: white;
+}
+.tab::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.tab:hover::after {
+    width: 100%;
+}
