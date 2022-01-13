@@ -579,7 +579,15 @@ p{
     }
 }
 /* vertical */
-@media (max-width:380px){
+
+@media (max-width:420px) and (max-height:745px){
+
+    body{
+
+        height: 150vh;
+    }
+}
+@media (max-width:380px) and (min-height:625px){
 
     h1{
 
@@ -587,12 +595,5 @@ p{
     }
     body{
         height: 120vh;
-    }
-}
-@media (max-width:420px) and (max-height:745px){
-
-    body{
-
-        height: 150px;
     }
 }
