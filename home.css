@@ -589,3 +589,10 @@ p{
         height: 120vh;
     }
 }
+@media (max-width:420px) and (max-height:745px){
+
+    body{
+
+        height: 150px;
+    }
+}
